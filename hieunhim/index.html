@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hiếu & Nhím | Our Moments</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="glow" aria-hidden="true"></div>
+
+    <header class="nav">
+      <div class="brand">Hiếu & Nhím</div>
+      <button class="cta" data-scroll="#game">Play game</button>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero-left">
+          <p class="eyebrow">Our moments</p>
+          <h1 class="hero-title">Happy 14/3 em bé iu</h1>
+          <p class="hero-subtitle">You are my sunshine, my love, and my everything.
+            The more time we spend together, the more I realize how much you mean to me. </p>
+            <button class="cta" data-scroll="#gallery">Mở gallery</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <div class="section-header">
+          <h2>Gallery cute có frame wraps</h2>
+        </div>
+        <div class="memory-grid" id="memoryGrid"></div>
+      </section>
+
+      <section class="game" id="game">
+        <div class="section-header">
+          <h2>Câu hỏi hàng ngày của em Nhím dành cho anh Hiếu 💘</h2>
+        </div>
+        <div class="game-wheels">
+          <div class="game-panel" id="loveGamePanel">
+            <p class="game-question">Anh có yêu em không?</p>
+            <div class="wheel-wrap">
+              <div class="wheel-pointer" aria-hidden="true"></div>
+              <div class="wheel" id="loveWheel" aria-label="Vòng quay tình yêu">
+                <span class="wheel-label top">Có</span>
+                <span class="wheel-label right">Không</span>
+                <span class="wheel-label bottom">Không</span>
+                <span class="wheel-label left">Không</span>
+              </div>
+            </div>
+            <button class="cta" id="gameStartBtn" type="button">Start</button>
+            <p class="game-result" id="gameResult" aria-live="polite"></p>
+          </div>
+
+          <div class="game-panel" id="loveGamePanel2">
+            <p class="game-question">Anh hết thương em rồi chì?</p>
+            <div class="wheel-wrap">
+              <div class="wheel-pointer" aria-hidden="true"></div>
+              <div class="wheel" id="loveWheel2" aria-label="Vòng quay tình yêu thứ hai">
+                <span class="wheel-label top">Không</span>
+                <span class="wheel-label right">Có</span>
+                <span class="wheel-label bottom">Có</span>
+                <span class="wheel-label left">Có</span>
+              </div>
+            </div>
+            <button class="cta" id="gameStartBtn2" type="button">Start</button>
+            <p class="game-result" id="gameResult2" aria-live="polite"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Hiếu & Nhím • Our moments</p>
+      <button class="ghost" data-scroll="#top">Lên đầu trang</button>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
